@@ -27,15 +27,15 @@ def mainMenu():
             if input() == '2':
                 main() # This takes the user back to the main options
     if gMasterMenu == '2':
-        print('Uh uh, hope you\'re not doing a con save with 1 HP already.')
+        print('Uh uh, hope you\'re not doing a CON save with 1 HP already.')
         while True:
             savingRoll = random.randint(1, 20)
-            print('What is the saving roll DC?')
+            print('What is the saving throw DC?')
             savingRollDC = int(input())
             print('What is the saving roll bonus?')
             savingRollBonus = int(input())
             if savingRoll + savingRollBonus > savingRollDC:
-                print('The character succeeded the saving roll!')
+                print('The character succeeded the saving throw!')
             elif savingRoll + savingRollBonus < savingRollDC:
                 print('The character failed the saving roll!')
             print('Type 1 to roll again or 2 to go back to the main menu')
